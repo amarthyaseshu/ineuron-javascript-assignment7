@@ -9,7 +9,7 @@ if(strToTruncate.length>4){
     strToTruncate=strToTruncate.concat("..."); 
 }
 //Output
-console.log(strToTruncate);
+console.log("1: "+strToTruncate);
 
 /*-------------------------------------------------------------------------------*/
 
@@ -20,7 +20,7 @@ output the result */
 let strToTrim="Hii Boy";
 
 //Output
-console.log(strToTrim.replace(/\s/g, ""));
+console.log("2: "+strToTrim.replace(/\s/g, ""));
 
 /*-------------------------------------------------------------------------------*/
 
@@ -32,7 +32,7 @@ let strToReplace="Hii Boy";
 let strSplitByWhiteSpace=strToReplace.split(" ");
 
 //Output
-console.log(strSplitByWhiteSpace[1].concat(" ").concat(strSplitByWhiteSpace[0]));
+console.log("3: "+strSplitByWhiteSpace[1].concat(" ").concat(strSplitByWhiteSpace[0]));
 
 /*-------------------------------------------------------------------------------*/
 
@@ -43,18 +43,20 @@ display the result */
 let strToReplaceA="apple";
 
 //Output
-console.log(strToReplaceA.replace("a", "x"));
+console.log("4: "+strToReplaceA.replace("a", "x"));
 
 /*-------------------------------------------------------------------------------*/
 
 /* 5. What string method can be used to convert string into array ? */
-// Answer: toCharArray method
+// Answer
+console.log("5: split,slice methods");
 
 /*-------------------------------------------------------------------------------*/
 
 /* 6. What string method can be used to check the occurrence of a specified
 text in a string? */
-// Answer: includes method
+// Answer
+console.log("6:includes method");
 
 /*-------------------------------------------------------------------------------*/
 
@@ -66,7 +68,7 @@ text in a string? */
 let strNewLine = "Java\nBlockchain";
 
 //Output
-console.log(strNewLine);
+console.log("7: "+strNewLine);
 
 /*-------------------------------------------------------------------------------*/
 
@@ -83,7 +85,7 @@ return (firstLetterAscii>=97&&firstLetterAscii<=122)?true:false;
 }
 
 //Output
-console.log(isFirstCharOfStrLowerCase(strToTestLowercase));
+console.log("8: "+isFirstCharOfStrLowerCase(strToTestLowercase));
 
 /*-------------------------------------------------------------------------------*/
 
@@ -95,7 +97,7 @@ console.log(isFirstCharOfStrLowerCase(strToTestLowercase));
 let strToCompare="Yes";
 
 //Output
-console.log(strToCompare.toLowerCase()==="yes");
+console.log("9: "+strToCompare.toLowerCase()==="yes");
 
 /*-------------------------------------------------------------------------------*/
 
@@ -107,7 +109,7 @@ console.log(strToCompare.toLowerCase()==="yes");
 let strConvToUppercase="amarthya";
 
 //Output
-console.log(strConvToUppercase.toUpperCase());
+console.log("10a: "+strConvToUppercase.toUpperCase());
 
 /* 10b. Convert only the first character to uppercase. */
 
@@ -115,7 +117,7 @@ console.log(strConvToUppercase.toUpperCase());
 let conv1stLetterToUppercase="amarthya";
 
 //Output
-console.log(conv1stLetterToUppercase.replace(conv1stLetterToUppercase.charAt(0),conv1stLetterToUppercase.charAt(0).toUpperCase()));
+console.log("10b: "+conv1stLetterToUppercase.replace(conv1stLetterToUppercase.charAt(0),conv1stLetterToUppercase.charAt(0).toUpperCase()));
 
 /* 10c. Convert the String into lower case. */
 
@@ -123,7 +125,7 @@ console.log(conv1stLetterToUppercase.replace(conv1stLetterToUppercase.charAt(0),
 let convStrToLowerCase="Amarthya";
 
 //Output
-console.log(convStrToLowerCase.toLowerCase());
+console.log("10c: "+convStrToLowerCase.toLowerCase());
 
 /* 10d. Break the string into two halves and swap them. */
 
@@ -134,7 +136,7 @@ let firstHalf=strToBreakSwap.slice(0,strToBreakSwap.length/2);
 let secondHalf=strToBreakSwap.slice(strToBreakSwap.length/2,strToBreakSwap.length);
 
 //Output
-console.log(secondHalf.concat(firstHalf));
+console.log("10d: "+secondHalf.concat(firstHalf));
 
 /* 10e. Count the repeating characters. */
 
@@ -154,7 +156,7 @@ for( i=0;i<repeatingCharCount.length;i++){
 let noOfRepeatingChar=Array.from(charCountMap.values()).filter(value=>value>1).length;
 
 //Output
-console.log(noOfRepeatingChar);
+console.log("10e: "+noOfRepeatingChar);
 
 /* 10f. Reverse the string */
 
@@ -167,7 +169,7 @@ for(let i=strToReverseArr.length-1;i>=0;i--){
 }
 
 //Output
-console.log(reversedString);
+console.log("10f: "+reversedString);
 
 
 
